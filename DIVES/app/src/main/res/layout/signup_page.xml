@@ -60,12 +60,11 @@
         android:layout_marginTop="21dp"
         android:id="@+id/editText6" />
 
-    <Button
-        android:text="JOIN NOW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editText6"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:id="@+id/button2" />
+    <ImageButton
+        app:srcCompat="@drawable/divein"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/editText6"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
 </RelativeLayout>
