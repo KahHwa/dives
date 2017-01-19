@@ -44,15 +44,21 @@ input[type="text"],input[type="password"]{
     border: none;
     background-color: #2ECC71;
     border-radius: 4px;
+    margin-left: 18px;
 }
 .btn-default{
     width: 300px;
     padding: 8px 30px;
+    margin-left: 18px;
 }
-.or{
+.alr{
     margin-bottom: 12px;
+    margin-left: 18px;
 }
-
+.back{
+    margin-top: 12px;
+    margin-left: 18px;
+}
 p.sansserif{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36;

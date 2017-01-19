@@ -33,7 +33,7 @@
 
 /* Sidebar styling*/
 .sidebar-nav{
-    padding: 50px 0 0 0;
+    padding: 0px 0 0 0;
     list-style: none;
 }
 .sidebar-nav li{
@@ -54,8 +54,9 @@
   background-color: #428bca;
 }
 #sidebar-wrapper{
-    margin-top: 0px;
+    margin-top: 50px;
 }
+
 
 .navbar-toggle{
     float: left;
