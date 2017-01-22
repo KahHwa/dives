@@ -21,4 +21,5 @@
         completions."
     </string>
     <string name="action_sign_up">Sign up</string>
+    <string name="title_activity_message">MessageActivity</string>
 </resources>
