@@ -16,6 +16,9 @@ import android.view.MenuItem;
 
 import fragments.FeedFragment;
 import fragments.MainFragment;
+import fragments.MessageFragment;
+import fragments.NotificationFragment;
+import fragments.UpComingFragment;
 
 import static com.example.ricoardiya.dives.R.*;
 
@@ -94,11 +97,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             fn.beginTransaction().replace(R.id.content_frame, new FeedFragment()).commit();
         } else if (id == R.id.nav_gallery) {
-
+            fn.beginTransaction().replace(R.id.content_frame,new MessageFragment()).commit();
         } else if (id == R.id.nav_slideshow) {
-
+            fn.beginTransaction().replace(R.id.content_frame,new NotificationFragment()).commit();
         } else if (id == R.id.nav_manage) {
-
+            fn.beginTransaction().replace(R.id.content_frame, new UpComingFragment()).commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
