@@ -4,9 +4,8 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:text="TextView"
+        android:text="Up Coming Events Fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        tools:text="Up Coming Events Fragment" />
+        android:id="@+id/textView3" />
 </FrameLayout>
