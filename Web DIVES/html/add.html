@@ -1,13 +1,15 @@
 <!DOCTYPE>
 <html lang="en">
     <head>
-        <title>Settings</title>
+        <title>Add Job Listing</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <link rel="stylesheet"  href="../style/settings.css">
+        <script src="../script/bootstrap-tagsinput.js"></script>
+        <link rel="stylesheet"  href="../style/add.css">
+        <link rel="stylesheet"  href="../style/bootstrap-tagsinput.css">
     </head>
     <body>
 
@@ -60,9 +62,23 @@
                     
                 </div>
                 <form>
-                  <div class="form-group">
-                    <label for="changeCompanyName">Company name</label>
-                    <input type="text" class="form-control" id="changeCompanyName" aria-describedby="changeCompanyName" placeholder="Enter company name">
+                  <div class="form-group row">
+                    <label for="addJobTitle" class="col-sm-2 col-form-label">Job Title</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="addJobTitle" aria-describedby="addJobTitle" placeholder="Enter job title">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="addKeywords" class="col-sm-2 col-form-label">Keyword(s)</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="tags" aria-describedby="addKeywords" placeholder="Enter multiple keywords" value="" data-role="tagsinput">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputVacancy" class="col-sm-2 col-form-label">Vacancy</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="number" value="" id="inputVacancy" placeholder="Enter the number of vacancy">
+                    </div>
                   </div>
                   <a type="submit" class="btn btn-primary" href="profile.html">Save</a>
                 </form>
