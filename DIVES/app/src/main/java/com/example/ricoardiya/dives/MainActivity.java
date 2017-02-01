@@ -15,9 +15,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import fragments.FeedFragment;
+import fragments.LogoutFragment;
 import fragments.MainFragment;
 import fragments.MessageFragment;
 import fragments.NotificationFragment;
+import fragments.ProfileFragment;
 import fragments.UpComingFragment;
 
 import static com.example.ricoardiya.dives.R.*;
@@ -51,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         android.app.FragmentManager fn = getFragmentManager();
-        fn.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
+        fn.beginTransaction().replace(R.id.content_frame, new FeedFragment()).commit();
     }
 
     @Override
@@ -94,18 +96,18 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_feed) {
             fn.beginTransaction().replace(R.id.content_frame, new FeedFragment()).commit();
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_message) {
             fn.beginTransaction().replace(R.id.content_frame,new MessageFragment()).commit();
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_notification) {
             fn.beginTransaction().replace(R.id.content_frame,new NotificationFragment()).commit();
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_upcoming) {
             fn.beginTransaction().replace(R.id.content_frame, new UpComingFragment()).commit();
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_profile) {
+            fn.beginTransaction().replace(R.id.content_frame, new ProfileFragment()).commit();
+        } else if (id == R.id.nav_logout) {
+            fn.beginTransaction().replace(R.id.content_frame, new LogoutFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
