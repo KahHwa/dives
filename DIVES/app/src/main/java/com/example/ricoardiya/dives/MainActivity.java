@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setTitle("");
+        toolbar.setLogo(mipmap.ic_elogopadded);
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

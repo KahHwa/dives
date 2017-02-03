@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.ricoardiya.dives.R;
 
@@ -21,6 +22,18 @@ public class ProfileFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_profile,container,false);
 
+
+//        Button button = null;
+//        button = (Button) button.findViewById(R.id.bEditProfile);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                // Do something in response to button click
+//
+//            }
+//        });
         return rootView;
+
+
     }
+
 }

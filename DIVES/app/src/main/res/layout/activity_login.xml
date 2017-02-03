@@ -25,13 +25,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Log In"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/tvLogIn"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    tools:text="Log in"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
             </LinearLayout>
@@ -73,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/bLogIn"
-                    tools:text="Log In" />
+                    android:text="Log In" />
             </LinearLayout>
 
             <LinearLayout

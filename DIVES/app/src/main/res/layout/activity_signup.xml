@@ -29,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/tvSignUp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                    tools:text="Sign up" />
+                    android:text="Sign up" />
             </LinearLayout>
 
             <LinearLayout
@@ -98,7 +98,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/bSignUp"
-                    tools:text="Sign up" />
+                    android:text="Sign up" />
             </LinearLayout>
 
         </LinearLayout>
