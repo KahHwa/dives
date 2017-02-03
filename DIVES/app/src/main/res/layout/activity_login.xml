@@ -80,12 +80,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tvRegisterHere"
-                    tools:text="Create an Account" />
+                    android:id="@+id/bSignUp2"
+                    android:text="Create an Account" />
             </LinearLayout>
+
+
 
         </LinearLayout>
     </ScrollView>

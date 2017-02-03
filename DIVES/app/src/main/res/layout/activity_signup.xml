@@ -100,6 +100,17 @@
                     android:id="@+id/bSignUp"
                     android:text="Sign up" />
             </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bLogIn2"
+                    android:text="Log In" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

@@ -10,6 +10,22 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public Button bSignUp2;
+
+    public void init(){
+        bSignUp2 = (Button) findViewById(R.id.bSignUp2);
+        bSignUp2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent signup = new Intent(LoginActivity.this,SignupActivity.class);
+
+                startActivity(signup);
+            }
+        });
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,14 +34,15 @@ public class LoginActivity extends AppCompatActivity {
         final EditText etEmail = (EditText) findViewById(R.id.etEmail);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button bLogIn = (Button) findViewById(R.id.bLogIn);
-        final TextView RegisterLink = (TextView) findViewById(R.id.tvRegisterHere);
 
-        RegisterLink.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent RegisterIntent = new Intent(LoginActivity.this, SignupActivity.class);
-                LoginActivity.this.startActivity(RegisterIntent);
-            }
-        });
+//        RegisterLink.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//                Intent RegisterIntent = new Intent(LoginActivity.this, SignupActivity.class);
+//                LoginActivity.this.startActivity(RegisterIntent);
+//            }
+//        });
+
+        init();
     }
 }
