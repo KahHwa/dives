@@ -23,14 +23,18 @@ public class ProfileFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_profile,container,false);
 
 
-//        Button button = null;
-//        button = (Button) button.findViewById(R.id.bEditProfile);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                // Do something in response to button click
-//
-//            }
-//        });
+        Button button = null;
+        button = (Button) button.findViewById(R.id.bEditProfile);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Do something in response to button click
+
+                android.app.FragmentManager fn = getFragmentManager();
+
+                fn.beginTransaction().replace(R.id.content_frame, new EditProfileFragment()).commit();
+
+            }
+        });
         return rootView;
 
 
