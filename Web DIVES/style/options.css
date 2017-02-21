@@ -20,14 +20,22 @@ body{
     width: 400px;
     height: 70px;
     background-color: #999999;
-    margin-bottom: 40px;
+    margin-bottom: 120px;
     border-radius: 8px 8px 0 0;
     padding-top: 10px;
 }
 .btn-default{
+    display: inline-block;
     width: 300px;
     padding: 8px 30px;
     margin-left: 18px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btn-default:hover{
+    background: #2ECC71;
+    opacity: 50%;
 }
 
 .selector{
