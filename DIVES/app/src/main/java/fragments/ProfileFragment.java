@@ -28,24 +28,24 @@ public class ProfileFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_profile,container,false);
 
 
-//        Button button = null;
+        Button button = null;
 
-//        button = (Button) button.findViewById(R.id.bEditProfile);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Do something in response to button click
-//
-//                Fragment newFragment = new EditProfileFragment();
-//                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-//
-//                transaction.replace(R.id.content_frame, newFragment);
-//                transaction.addToBackStack(null);
-//
-//                transaction.commit();
-//
-//            }
-//        });
+        button = (Button) button.findViewById(R.id.bEditProfile);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Do something in response to button click
+
+                Fragment newFragment = new EditProfileFragment();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.content_frame, newFragment);
+                transaction.addToBackStack(null);
+
+                transaction.commit();
+
+            }
+        });
 
 
         return rootView;
