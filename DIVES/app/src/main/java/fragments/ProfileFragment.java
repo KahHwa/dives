@@ -1,16 +1,15 @@
 package fragments;
 
 import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.ricoardiya.dives.EditProfileActivity;
 import com.example.ricoardiya.dives.R;
 
 /**
@@ -19,7 +18,7 @@ import com.example.ricoardiya.dives.R;
 
 public class ProfileFragment extends Fragment {
 
-    Button button;
+    public Button bEditProfile;
 
     @Nullable
     @Override
@@ -27,30 +26,19 @@ public class ProfileFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_profile,container,false);
 
+        bEditProfile = (Button) rootView.findViewById(R.id.bEditProfile);
 
-        Button button = null;
-
-        button = (Button) button.findViewById(R.id.bEditProfile);
-        button.setOnClickListener(new View.OnClickListener() {
+        bEditProfile.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // Do something in response to button click
+            public void onClick(View view) {
 
-                Fragment newFragment = new EditProfileFragment();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                Intent login = new Intent(getActivity(),EditProfileActivity.class);
 
-                transaction.replace(R.id.content_frame, newFragment);
-                transaction.addToBackStack(null);
-
-                transaction.commit();
-
+                startActivity(login);
             }
+
         });
-
-
         return rootView;
-
-
     }
 
 }
