@@ -2,34 +2,39 @@ package fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.ricoardiya.dives.R;
+
+import static com.example.ricoardiya.dives.R.layout;
+import static com.example.ricoardiya.dives.R.layout.fragment_notification;
+
 
 /**
  * Created by Rico Ardiya on 1/25/2017.
  */
 
 public class NotificationFragment extends Fragment {
+    // Array of strings...
+    public String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry",
+            "WebOS","Ubuntu","Windows7","Max OS X"};
 
-    RecyclerView recyclerView;
-
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(fragment_notification,container,false);
 
-        View rootView = inflater.inflate(R.layout.fragment_notification,container,false);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), layout.notification_listview, mobileArray);
 
-        recyclerView = (RecyclerView) recyclerView.findViewById(R.id.recycler);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        recyclerView.setAdapter(new RecyclerAdapter());
+        ListView listView = (ListView) rootView.findViewById(R.id.notification_list);
+        listView.setAdapter(adapter);
+
         return rootView;
     }
+
+
 }
