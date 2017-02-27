@@ -20,14 +20,32 @@ import static com.example.ricoardiya.dives.R.layout.fragment_notification;
 
 public class NotificationFragment extends Fragment {
     // Array of strings...
-    public String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry",
-            "WebOS","Ubuntu","Windows7","Max OS X"};
+    public String[] mobileArray = {"Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Seagate has sent you a request ",
+            "Western Digital has sent you a request ",
+            "Google has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request ",
+            "Microsoft has sent you a request "
+            };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(fragment_notification,container,false);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), layout.notification_listview, R.id.label, mobileArray);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), layout.notification_listview, R.id.label_notif, mobileArray);
 
 
         ListView listView = (ListView) rootView.findViewById(R.id.notification_list);

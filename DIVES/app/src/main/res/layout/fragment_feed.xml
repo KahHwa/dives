@@ -1,39 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
 
-    <RelativeLayout
+
+    <ListView
+        android:id="@+id/feed_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:text="Feed Fragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"/>
-
-        <Button
-            android:text="Log In"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="56dp"
-            android:id="@+id/bLogIn1"
-            android:onClick="myFancyMethod"/>
-
-        <Button
-            android:text="Sign Up"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/bLogIn1"
-            android:layout_alignLeft="@+id/bLogIn1"
-            android:layout_alignStart="@+id/bLogIn1"
-            android:layout_marginTop="28dp"
-            android:id="@+id/bSignUp1" />
-
-
-    </RelativeLayout>
-
+        android:layout_height="match_parent" />
 </FrameLayout>
