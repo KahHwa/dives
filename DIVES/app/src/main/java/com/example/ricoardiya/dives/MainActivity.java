@@ -38,11 +38,19 @@ public class MainActivity extends AppCompatActivity
         toolbar.setLogo(mipmap.ic_elogopadded);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
+
+        fab.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                android.app.FragmentManager fn = getFragmentManager();
+                fn.beginTransaction().replace(R.id.content_frame, new MessageFragment()).commit();
             }
         });
 
