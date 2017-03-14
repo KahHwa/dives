@@ -19,27 +19,9 @@ import static com.example.ricoardiya.dives.R.layout.fragment_feed;
 public class FeedFragment extends Fragment {
 
     // Array of strings...
-    public String[] mobileArray = {"Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-            "Job fair by Nanyang Technological University",
-
+    public String[] mobileArray = {"Career Fair by Marina",
+            "Career Fair by e2i",
+            "Career Fair by WSG"
     };
 
     @Override

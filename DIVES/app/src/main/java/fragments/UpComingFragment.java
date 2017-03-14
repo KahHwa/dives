@@ -21,9 +21,9 @@ import static com.example.ricoardiya.dives.R.layout.fragment_upcoming;
 public class UpComingFragment extends Fragment{
 
     // Array of strings...
-    public String[] mobileArray = {"job fair by Nanyang Technological University ",
-            "Seminar by Microsoft"
-
+    public String[] mobileArray = {"Career Fair by Marina",
+            "Career Fair by e2i",
+            "Career Fair by WSG"
     };
 
     @Override

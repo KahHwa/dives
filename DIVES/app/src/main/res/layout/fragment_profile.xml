@@ -87,7 +87,7 @@
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:text='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                    android:text="I am an Electrical and Electronics Engineer Undergraduate, whom passionate in the research and development of the future intelligent system and control, and mobile apps development. Besides, i also interested in organizing people and work together as a team. That make my interest in studying business. Meanwhile in my free time, i love to play football, take photos, and do some art design. Though out various of experiences, i am sharpened as a hardworking, and diligent person. I believe my skills and abilities, would help me to build strong relationship in team-working environment."
                     android:textSize="14dp"
                     android:textColor="#000"
                     android:layout_width="match_parent"
@@ -135,7 +135,7 @@
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:text='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                    android:text="Nanyang Technological University"
                     android:textSize="14dp"
                     android:textColor="#000"
                     android:layout_width="match_parent"
@@ -167,7 +167,7 @@
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:text='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                    android:text="Nanyang Technological University"
                     android:textSize="14dp"
                     android:textColor="#000"
                     android:layout_width="match_parent"
@@ -199,7 +199,7 @@
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:text='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                    android:text="Understanding Consumer Behavior by Linkedin"
                     android:textSize="14dp"
                     android:textColor="#000"
                     android:layout_width="match_parent"
@@ -231,7 +231,7 @@
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:text='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                    android:text="Circuit Analysis, Java Programming, Php programming, Leadership "
                     android:textSize="14dp"
                     android:textColor="#000"
                     android:layout_width="match_parent"

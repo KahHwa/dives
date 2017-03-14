@@ -20,25 +20,8 @@ import static com.example.ricoardiya.dives.R.layout.fragment_notification;
 
 public class NotificationFragment extends Fragment {
     // Array of strings...
-    public String[] mobileArray = {"Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Seagate has sent you a request ",
-            "Western Digital has sent you a request ",
-            "Google has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request ",
-            "Microsoft has sent you a request "
+    public String[] mobileArray = {"You got a new request from Google ",
+            "You got a new request from Seagate"
             };
 
     @Override

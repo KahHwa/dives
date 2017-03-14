@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class LoginActivity extends AppCompatActivity {
 
     public Button bSignUp2;
+    public Button bLogIn;
 
     public void init(){
         bSignUp2 = (Button) findViewById(R.id.bSignUp2);
@@ -21,6 +22,20 @@ public class LoginActivity extends AppCompatActivity {
                 Intent signup = new Intent(LoginActivity.this,SignupActivity.class);
 
                 startActivity(signup);
+            }
+        });
+
+    }
+
+    public void init2(){
+        bLogIn = (Button) findViewById(R.id.bLogIn);
+        bLogIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent login = new Intent(LoginActivity.this,MainActivity.class);
+
+                startActivity(login);
             }
         });
 
@@ -44,5 +59,6 @@ public class LoginActivity extends AppCompatActivity {
 //        });
 
         init();
+        init2();
     }
 }

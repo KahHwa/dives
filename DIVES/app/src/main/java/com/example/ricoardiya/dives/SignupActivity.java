@@ -11,6 +11,7 @@ import android.widget.EditText;
 public class SignupActivity extends AppCompatActivity {
 
     public Button bLogIn2;
+    public Button bSignUp;
 
     public void init(){
         bLogIn2 = (Button) findViewById(R.id.bLogIn2);
@@ -19,6 +20,20 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent login = new Intent(SignupActivity.this,LoginActivity.class);
+
+                startActivity(login);
+            }
+        });
+
+    }
+
+    public void init2(){
+        bSignUp = (Button) findViewById(R.id.bSignUp);
+        bSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent login = new Intent(SignupActivity.this,MainActivity.class);
 
                 startActivity(login);
             }
@@ -39,7 +54,7 @@ public class SignupActivity extends AppCompatActivity {
         final Button bSignUp = (Button) findViewById(R.id.bSignUp);
 
         init();
-
+        init2();
     }
 
 
