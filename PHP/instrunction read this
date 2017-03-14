@@ -1,0 +1,98 @@
+1. at the login android app,
+give the name to button for submit : (text="Login' and Id: "btnLogin")
+give the name password field submit : (text="Your Password' and Id: "etPassword")
+give the name of button to submit : (Hint ="Your Username' and Id: "etUsername")
+
+2. copy the GenAsync.jar at app->libs. and then right click< choose add to library.
+
+3. go to build.gradle 
+make sure this line is there:
+compile files('libs/GenAsync.jar')
+
+4.go back to app->libs 
+add the following code: 
+
+PostResponseAsyncTask task= new PostResponseAsyncTask (this);
+task.execute("");
+
+Notes: the 'this' might shows error. Click the red bulb and choose "make 'Main activity' implement..." click ok
+then the complier will automatically create the class.
+@override
+public void processFinish (string s){
+}
+
+5. Declare the button at login page in the library by typing the following codes 
+inside the pubic class main activity
+
+
+EditText etUsername, etPassword;
+Button btnLogin;
+
+6. add definition of the button and addfile inside the onCreate funciton by add the following codes 
+
+etUsername =(EditText) findViewById(R.id.etUsername);
+etUsername =(EditText) findViewById(R.id.etPassword);
+btnLogin =(Button) findViewById(R.id.btnLogin);
+btnLogin.setOnClickListener(this);
+
+
+these codes should be above instruction no.4 
+
+7. include the class of ViewOnClickListener by add ViewOnClickListener class at this line
+
+public class MainActivity extends AppCompatActivity implemets AsyncResponse{  //this line
+....
+}
+
+to become 
+
+public class MainActivity extends AppCompatActivity implemets AsyncResponse, View.OnClickListener{
+....
+}
+
+8. Implement the method by click the red bulb 'error' at btnLogin.setOnLongClickListener(this); 
+and the library will automatically create the definition template
+
+@override
+public boolean onClick (View v){
+    return false;
+}
+
+9. move the code at step 4, to be inside instruction 8 template, and add the codes, as shown below:
+
+@override
+public boolean onClick (View v){
+    HashMap postData = new HashMap();
+    postData.put("mobile", "android");
+    postData.put("txtUsername", etUsername.getText().toString()); // new code to get user input 
+    postData.put("txtPassword", etPassword.getText().toString() ); //newcode to get user input
+ 
+    PostResponseAsyncTask task= new PostResponseAsyncTask (this, postData); // add the postData argument
+    task.execute("http://localhost/client.login.php"); //change the address where do you want to post the data from user input 
+}
+
+10. Define the definiton of AsyncResponse class by fill the pre-build function definition at step 4,
+(when you click to submit, the data will go to be checked at web, and return login success or failed)
+@override
+public void processFinish (string s){
+    if(result.equals("sucess"){
+        Intent in = new Intent(this, SubActivity.class); //the SubActivity class is the new Activity/window to display after login success
+        startActivity(in);
+    Toast.makeText(this,"Login Successfully", Toast.LENGTH_LONG).show();
+
+    }
+    else{
+    Toast.makeText(this,"Login Failed", Toast.LENGTH_LONG).show();
+    }
+}
+
+11. Go to android manifest and add user permission by add this line at the first line inside the <manifest> </manifest>
+
+<uses-permission android:name="android.permission,INTERNET"/>
+
+NOTE: if we do not write the line above, we cannot connect the android to the web
+
+12. if you are using the android emulator change the address of local host to  10.0.3.2 or 10.0.2.2 
+task.execute("http://10.0.3.2/client.login.php");
+
+13. Run the application. it should be working 

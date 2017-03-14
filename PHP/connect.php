@@ -1,11 +1,11 @@
 <?php
-$servername = $_GET['localhost'];
-$username = $_GET['username'];
-$password = $_GET['password'];
-$dbname = $_GET['UserFrontPage'];
+$servername = 'localhost'; //please replace this with your database server name
+$username = 'username'; //replace with database username
+$password = 'password'; //replace with database password
+$dbname = 'UserFrontPage'; //databaase name
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
 if (!$conn) {
