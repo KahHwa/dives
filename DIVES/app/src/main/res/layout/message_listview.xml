@@ -9,7 +9,14 @@
         android:layout_height="wrap_content"
         android:text="@+id/label"
         android:textSize="50px"
-        android:layout_marginBottom="20dp">
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/sublist_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px">
     </TextView>
 
 </LinearLayout>
